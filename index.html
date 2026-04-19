@@ -1,5 +1,17 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script>
+  <title>Sepenuh Hati</title>
+
+  <meta name="description" content="Sepenuh Hati adalah halaman inspiratif tentang menjalani hidup dengan ketulusan, cinta, kesabaran, dan usaha terbaik dalam setiap langkah.">
+  <meta name="keywords" content="sepenuh hati, ketulusan, motivasi hidup, inspirasi, kehidupan baik, cinta, usaha, makna hidup">
+  <meta name="author" content="Sepenuh Hati">
+  <meta name="robots" content="index, follow">
+
+  <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
 (function () {  
@@ -100,3 +112,463 @@
 
 })();
 </script>
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf7;
+      color: #2f2f2f;
+      line-height: 1.8;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    header {
+      background: #ffffff;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #c05621;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+    }
+
+    .menu a {
+      color: #333;
+      font-weight: 600;
+    }
+
+    .menu a:hover {
+      color: #c05621;
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(90, 45, 20, 0.55), rgba(90, 45, 20, 0.55)),
+        url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      color: #ffffff;
+      text-align: center;
+      padding: 130px 20px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      max-width: 780px;
+      margin: 0 auto 30px;
+      font-size: 19px;
+      color: #fff7ed;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #c05621;
+      color: #ffffff;
+      padding: 14px 30px;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #9c4221;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 38px;
+      color: #c05621;
+      margin-bottom: 14px;
+    }
+
+    .subtitle {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 45px;
+      color: #555;
+      font-size: 17px;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 38px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+
+    .about-text h2 {
+      font-size: 34px;
+      color: #2f2f2f;
+      margin-bottom: 16px;
+    }
+
+    .about-text p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 22px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.07);
+      border: 1px solid #f1e3d8;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      color: #c05621;
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    .quote {
+      background: #fff3e8;
+      border-left: 7px solid #c05621;
+      padding: 35px;
+      border-radius: 18px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      font-style: italic;
+      font-size: 24px;
+      color: #7b341e;
+    }
+
+    .article-box {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 24px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+      border: 1px solid #f1e3d8;
+      margin-bottom: 25px;
+    }
+
+    .article-box h3 {
+      color: #c05621;
+      font-size: 27px;
+      margin-bottom: 14px;
+    }
+
+    .article-box p {
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #c05621, #dd6b20);
+      color: #ffffff;
+      text-align: center;
+      padding: 70px 25px;
+      border-radius: 28px;
+    }
+
+    .cta h2 {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+
+    .cta p {
+      max-width: 720px;
+      margin: 0 auto 26px;
+      color: #fff7ed;
+    }
+
+    .cta .btn {
+      background: #ffffff;
+      color: #c05621;
+    }
+
+    footer {
+      background: #2d1b12;
+      color: #f7d9c4;
+      text-align: center;
+      padding: 35px 20px;
+      margin-top: 60px;
+    }
+
+    footer strong {
+      color: #ffffff;
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .about,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .title {
+        font-size: 30px;
+      }
+
+      .quote {
+        font-size: 20px;
+        padding: 25px;
+      }
+
+      .cta h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Sepenuh Hati</div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#nilai">Nilai</a></li>
+          <li><a href="#cerita">Cerita</a></li>
+          <li><a href="#pesan">Pesan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Melakukan Segalanya Sepenuh Hati</h1>
+      <p>
+        Sepenuh hati adalah tentang ketulusan, kesabaran, dan keberanian untuk memberikan yang terbaik
+        dalam setiap langkah kehidupan, meskipun hasilnya belum selalu sempurna.
+      </p>
+      <a href="#tentang" class="btn">Mulai Membaca</a>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <div class="container">
+      <h2 class="title">Tentang Sepenuh Hati</h2>
+      <p class="subtitle">
+        Hidup yang dijalani sepenuh hati akan terasa lebih bermakna, karena setiap usaha dilakukan dengan niat yang tulus.
+      </p>
+
+      <div class="about">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Sepenuh hati">
+        <div class="about-text">
+          <h2>Ketulusan dalam Setiap Langkah</h2>
+          <p>
+            Sepenuh hati bukan berarti harus selalu kuat atau selalu berhasil.
+            Sepenuh hati berarti tetap berusaha dengan tulus, meskipun jalan yang dilalui tidak selalu mudah.
+          </p>
+          <p>
+            Dalam pekerjaan, keluarga, persahabatan, cinta, dan impian, sesuatu yang dilakukan dengan hati
+            biasanya meninggalkan kesan yang lebih dalam.
+          </p>
+          <p>
+            Saat kita menjalani hidup dengan sepenuh hati, kita belajar menghargai proses,
+            menerima kekurangan, dan terus memperbaiki diri tanpa kehilangan arah.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nilai">
+    <div class="container">
+      <h2 class="title">Nilai-Nilai Sepenuh Hati</h2>
+      <p class="subtitle">
+        Ada beberapa nilai penting yang membuat hidup terasa lebih hangat, tulus, dan bermakna.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Ketulusan</h3>
+          <p>
+            Melakukan sesuatu bukan hanya karena ingin dilihat, tetapi karena memang ingin memberi yang terbaik.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Kesabaran</h3>
+          <p>
+            Tidak semua hal langsung berhasil. Kesabaran membantu kita tetap berjalan meskipun prosesnya panjang.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Keikhlasan</h3>
+          <p>
+            Belajar menerima hasil dengan hati yang lapang setelah berusaha sebaik mungkin.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Usaha Terbaik</h3>
+          <p>
+            Memberikan kemampuan terbaik dalam setiap pekerjaan, hubungan, dan impian yang sedang diperjuangkan.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Cinta dan Perhatian</h3>
+          <p>
+            Hal kecil yang dilakukan dengan perhatian bisa memberi arti besar bagi orang lain.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Rasa Syukur</h3>
+          <p>
+            Bersyukur membuat hati lebih tenang dan membantu kita melihat kebaikan dalam kehidupan sehari-hari.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="quote">
+        “Apa pun yang dilakukan sepenuh hati akan selalu memiliki nilai, meskipun tidak semua orang melihat prosesnya.”
+      </div>
+    </div>
+  </section>
+
+  <section id="cerita">
+    <div class="container">
+      <h2 class="title">Cerita Tentang Sepenuh Hati</h2>
+      <p class="subtitle">
+        Beberapa renungan sederhana tentang bagaimana sepenuh hati bisa hadir dalam kehidupan sehari-hari.
+      </p>
+
+      <div class="article-box">
+        <h3>Sepenuh Hati dalam Bekerja</h3>
+        <p>
+          Bekerja sepenuh hati bukan hanya tentang mengejar hasil, tetapi juga tentang menghargai tanggung jawab.
+          Ketika seseorang bekerja dengan hati, ia tidak hanya menyelesaikan tugas, tetapi juga meninggalkan kualitas.
+        </p>
+        <p>
+          Setiap pekerjaan kecil tetap memiliki arti jika dilakukan dengan kesungguhan.
+          Dari hal sederhana itulah kepercayaan dan kemampuan tumbuh perlahan.
+        </p>
+      </div>
+
+      <div class="article-box">
+        <h3>Sepenuh Hati dalam Mencintai</h3>
+        <p>
+          Mencintai sepenuh hati berarti hadir dengan ketulusan, bukan hanya saat semuanya mudah,
+          tetapi juga saat keadaan membutuhkan kesabaran dan pengertian.
+        </p>
+        <p>
+          Cinta yang tulus tidak selalu ditunjukkan dengan hal besar.
+          Kadang ia hadir melalui perhatian kecil, doa, waktu, dan kesediaan untuk saling memahami.
+        </p>
+      </div>
+
+      <div class="article-box">
+        <h3>Sepenuh Hati dalam Mengejar Impian</h3>
+        <p>
+          Impian tidak selalu datang dengan jalan yang cepat. Ada proses, kegagalan, dan rasa lelah.
+          Namun, ketika impian diperjuangkan sepenuh hati, setiap langkah tetap memiliki makna.
+        </p>
+        <p>
+          Tidak perlu langsung sempurna. Cukup mulai, terus belajar, dan jangan berhenti hanya karena hasil belum terlihat.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pesan">
+    <div class="container">
+      <div class="cta">
+        <h2>Jalani Hari Ini dengan Sepenuh Hati</h2>
+        <p>
+          Berikan yang terbaik untuk hari ini. Tidak harus sempurna, tidak harus terlihat besar.
+          Yang penting, lakukan dengan niat baik, hati yang tulus, dan langkah yang terus bergerak.
+        </p>
+        <a href="#home" class="btn">Kembali ke Atas</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Sepenuh Hati</strong></p>
+    <p>Hidup dengan ketulusan, kesabaran, dan makna.</p>
+    <p>© 2026 Sepenuh Hati. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>
